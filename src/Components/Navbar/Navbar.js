@@ -47,7 +47,7 @@ const Navbar = ({ location }) => {
                             {data.email &&
                                 <Link className="nav-link btn px-4 fs-5 text-white bg d-inline-block rounded-pill" to="/login">Log Out</Link>
                             }
-                            { !data.email &&
+                            {!data.email &&
                                 <Link className="nav-link btn px-4 fs-5 text-white bg d-inline-block rounded-pill" to="/login">Log in</Link>
                             }
                         </li>

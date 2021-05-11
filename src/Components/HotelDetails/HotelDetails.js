@@ -19,7 +19,7 @@ const HotelDetails = () => {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:8000/hotelDetails/${id}`)
+        fetch(`https://radiant-mesa-95584.herokuapp.com/hotelDetails/${id}`)
             .then(res => res.json())
             .then(data => setDetails(...data))
     }, [id])

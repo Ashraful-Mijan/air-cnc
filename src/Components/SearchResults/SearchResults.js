@@ -10,7 +10,7 @@ const SearchResults = () => {
     console.log(hotels)
     const [data, setData] = useContext(UserContext)
    useEffect(()=> {
-    fetch(`http://localhost:8000/findDataBy/${data.location}`)
+    fetch(`https://radiant-mesa-95584.herokuapp.com/findDataBy/${data.location}`)
     .then(res => res.json())
     .then(data => setHotels(data))
    }, [data.location])

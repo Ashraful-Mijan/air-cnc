@@ -7,7 +7,7 @@ import PopularHotels from '../PopularHotels/PopularHotels';
 const Home = () => {
     const [popularHotels, setPopularHotels] = useState([])
     useEffect(()=> {
-        fetch('http://localhost:8000/popularHotels')
+        fetch('https://radiant-mesa-95584.herokuapp.com/popularHotels')
         .then(res => res.json())
         .then(data => setPopularHotels(data))
     }, [])
